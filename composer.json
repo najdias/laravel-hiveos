@@ -1,0 +1,22 @@
+{
+    "name": "days85/laravel-hiveos",
+    "description": "Laravel Package to interact with Hive OS",
+    "type": "library",
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.4.0"
+    },
+    "license": "BSD-3-Clause",
+    "autoload": {
+        "psr-4": {
+            "Days85\\LaravelHiveos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nuno Dias",
+            "email": "nuno.jaco@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
