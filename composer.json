@@ -4,12 +4,13 @@
     "type": "library",
     "require": {
         "php": "^8.0",
-        "guzzlehttp/guzzle": "^7.4.0"
+        "guzzlehttp/guzzle": "^7.4.0",
+        "illuminate/support": "^8"
     },
     "license": "BSD-3-Clause",
     "autoload": {
         "psr-4": {
-            "Days85\\LaravelHiveos\\": "src/"
+            "Days85\\HiveOS\\": "src/"
         }
     },
     "authors": [
@@ -18,5 +19,15 @@
             "email": "nuno.jaco@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Days85\\HiveOS\\ServiceProvider"
+            ],
+            "aliases": {
+                "Hiveos": "Days85\\Hiveos\\Facades\\HiveOS"
+            }
+        }
+    }
 }
