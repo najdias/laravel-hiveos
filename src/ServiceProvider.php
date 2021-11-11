@@ -10,7 +10,6 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider implements Def
     {
         $configPath = __DIR__ . '/../config/hiveos.php';
         $this->publishes([$configPath => $this->getConfigPath()]);
-
     }
 
     /**
@@ -20,7 +19,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider implements Def
      */
     public function register()
     {
-        $this->app->singleton(HiveOS::class, function() {
+        $this->app->singleton(HiveOS::class, function () {
             $token = config('hiveos.token');
             return new HiveOs($token);
         });

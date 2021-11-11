@@ -5,13 +5,23 @@
     "require": {
         "php": "^8.0",
         "guzzlehttp/guzzle": "^7.4.0",
-        "illuminate/support": "^8",
-        "illuminate/contracts": "^8"
+        "ergebnis/http-method": "dev-main",
+        "illuminate/support": "^8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "orchestra/testbench-dusk": "^6",
+        "ext-xdebug": "*"
     },
     "license": "BSD-3-Clause",
     "autoload": {
         "psr-4": {
             "Days85\\HiveOS\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Days85\\HiveOS\\Tests\\": "tests"
         }
     },
     "authors": [
@@ -27,7 +37,7 @@
                 "Days85\\HiveOS\\ServiceProvider"
             ],
             "aliases": {
-                "Hiveos": "Days85\\Hiveos\\Facades\\HiveOS"
+                "HiveOS": "Days85\\Hiveos\\Facades\\HiveOS"
             }
         }
     }
