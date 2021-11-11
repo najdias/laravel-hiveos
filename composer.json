@@ -37,7 +37,7 @@
                 "Days85\\HiveOS\\ServiceProvider"
             ],
             "aliases": {
-                "HiveOS": "Days85\\Hiveos\\Facades\\HiveOS"
+                "HiveOS": "Days85\\HiveOS\\Facades\\HiveOS"
             }
         }
     }
