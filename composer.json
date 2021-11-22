@@ -5,8 +5,7 @@
     "require": {
         "php": "^8.0",
         "guzzlehttp/guzzle": "^7.4.0",
-        "ergebnis/http-method": "dev-main",
-        "illuminate/support": "^8"
+        "ergebnis/http-method": "^2.1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9",
